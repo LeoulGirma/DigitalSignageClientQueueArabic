@@ -1,0 +1,483 @@
+﻿<!-- Dispenser Portrait -->
+<!--<div data-bind="if: Template() == 'Dispenser'">
+    <div data-bind="compose: 'Portrait/_PortraitNav.html'"></div>-->
+<!-- Top -->
+<!--<div data-bind="if: CurrencyPosition() == 'Top'">
+    <div class="col-md-12 frame" style="margin-top:20px;margin-bottom:30px;height:330px;">
+        <div data-bind="visible: ShowFeature() == 'Weather'">
+            <div data-bind="compose: 'Landscape/_LandscapeWeather.html'"></div>
+        </div>
+        <div class="row" data-bind="visible: ShowFeature() == 'Time'">
+            <div id="countdown">
+                <div data-bind="compose: 'Landscape/_LandscapeTime.html'"></div>
+            </div>
+        </div>
+        <div data-bind="visible: ShowFeature() == 'News'">
+            <div data-bind="compose: 'Landscape/_LandscapeNewsFeed.html'"></div>
+        </div>
+        <div class="row" data-bind="visible: ShowFeature() == 'Change'">
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Landscape/_LandscapeChangeFirst.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Landscape/_LandscapeChangeSecond.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Landscape/_LandscapeChangeThird.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Landscape/_LandscapeChangeFourth.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Landscape/_LandscapeChangeFifth.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Landscape/_LandscapeChangeSix.html'"></div>
+            </div>
+        </div>
+    </div>
+    <div data-bind="compose: 'Portrait/_PortraitAd.html'" style="margin-bottom:20px"></div>
+</div>-->
+<!-- Bottom -->
+<!--<div data-bind="if: CurrencyPosition() == 'Bottom'">
+        <div data-bind="compose: 'Portrait/_PortraitAd.html'" style="margin-top:20px"></div>
+        <div class="col-md-12 frame" style="margin-top:30px;margin-bottom:20px;">
+            <div data-bind="visible: ShowFeature() == 'Weather'">
+                <div data-bind="compose: 'Landscape/_LandscapeWeather.html'"></div>
+            </div>
+            <div class="row" data-bind="visible: ShowFeature() == 'Time'">
+                <div id="countdown">
+                    <div data-bind="compose: 'Landscape/_LandscapeTime.html'"></div>
+                </div>
+            </div>
+            <div  data-bind="visible: ShowFeature() == 'News'">
+                <div data-bind="compose: 'Landscape/_LandscapeNewsFeed.html'"></div>
+            </div>
+            <div class="row" data-bind="visible: ShowFeature() == 'Change'">
+                <div class="col-sm-2">
+                    <div data-bind="compose: 'Landscape/_LandscapeChangeFirst.html'"></div>
+                </div>
+                <div class="col-sm-2">
+                    <div data-bind="compose: 'Landscape/_LandscapeChangeSecond.html'"></div>
+                </div>
+                <div class="col-sm-2">
+                    <div data-bind="compose: 'Landscape/_LandscapeChangeThird.html'"></div>
+                </div>
+                <div class="col-sm-2">
+                    <div data-bind="compose: 'Landscape/_LandscapeChangeFourth.html'"></div>
+                </div>
+                <div class="col-sm-2">
+                    <div data-bind="compose: 'Landscape/_LandscapeChangeFifth.html'"></div>
+                </div>
+                <div class="col-sm-2">
+                    <div data-bind="compose: 'Landscape/_LandscapeChangeSix.html'"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div data-bind="compose: 'Portrait/_PortraitFooter.html'"></div>
+    </div>
+</div>-->
+<!-- End Of Dispenser Template -->
+<!-- Landscape -->
+<div data-bind="if: Template() == 'Template 3'">
+    <div data-bind="compose: 'OpeningSoon/_OpeningSoonAd.html'"></div>
+
+    <div style="margin:0px;padding:0px;">
+        <div data-bind="compose: 'OpeningSoon/_OpeningSoonCountdown.html'"></div>
+    </div>
+</div>
+
+<div data-bind="if: Template() == 'Template 1'">
+    <div data-bind="compose: 'Landscape/_LandscapeNav.html'"></div>
+
+    <!-- Left -->
+    <div data-bind="if: CurrencyPosition() == 'Left'">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div data-bind="compose: 'Landscape/_LandscapeCurrency.html'"></div>
+                </div>
+                <div class="col-md-6">
+                    <div data-bind="compose: 'Landscape/_LandscapeAd.html'"></div>
+                    <div data-bind="visible: ShowFeature() == 'Weather'">
+                        <div data-bind="compose: 'Landscape/_LandscapeWeather.html'"></div>
+                    </div>
+                    <div class="row" data-bind="visible: ShowFeature() == 'Time'">
+                        <div id="countdown">
+                            <div data-bind="compose: 'Landscape/_LandscapeTime.html'"></div>
+                        </div>
+                    </div>
+                    <div data-bind="visible: ShowFeature() == 'News'">
+                        <div data-bind="compose: 'Landscape/_LandscapeNewsFeed.html'"></div>
+                    </div>
+                    <div class="row" data-bind="visible: ShowFeature() == 'Change'">
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Landscape/_LandscapeChangeFirst.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Landscape/_LandscapeChangeSecond.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Landscape/_LandscapeChangeThird.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Landscape/_LandscapeChangeFourth.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Landscape/_LandscapeChangeFifth.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Landscape/_LandscapeChangeSix.html'"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Right -->
+    <div data-bind="if: CurrencyPosition() == 'Right'">
+
+        <div class="container-fluid">
+            <div>
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <div data-bind="compose: 'Landscape/_LandscapeAd.html'"></div>
+                        <div data-bind="visible: ShowFeature() == 'News'">
+                            <div data-bind="compose: 'Landscape/_LandscapeNewsFeedRight.html'"></div>
+                        </div>
+
+                        <div class="row" data-bind="visible: ShowFeature() == 'Time'">
+                            <div id="countdown">
+                                <div data-bind="compose: 'Landscape/_LandscapeTime.html'"></div>
+                            </div>
+                        </div>
+                        <div data-bind="visible: ShowFeature() == 'Weather'">
+                            <div data-bind="compose: 'Landscape/_LandscapeWeather.html'"></div>
+                        </div>
+
+                        <div class="row" data-bind="visible: ShowFeature() == 'Change'">
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Landscape/_LandscapeChangeFirst.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Landscape/_LandscapeChangeSecond.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Landscape/_LandscapeChangeThird.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Landscape/_LandscapeChangeFourth.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Landscape/_LandscapeChangeFifth.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Landscape/_LandscapeChangeSix.html'"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 frame">
+                        <div data-bind="compose: 'Landscape/_LandscapeCurrency.html'"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--<nav class="navbar fixed-bottom fbg overlay">-->
+
+        </div>
+    </div>
+    <div class="footer">
+        <div data-bind="compose: 'Landscape/_LandscapeFooter.html'"></div>
+    </div>
+</div>
+
+<!-- Portrait -->
+<div data-bind="if: Template() == 'Template 2'">
+    <div data-bind="compose: 'Portrait/_PortraitNav.html'"></div>
+
+    <!-- Top -->
+    <div data-bind="if: CurrencyPosition() == 'Top'">
+        <div class="col-md-12 frame" style="margin-top:20px;margin-bottom:30px;">
+            <div data-bind="compose: 'Portrait/_PortraitCurrency.html'"></div>
+
+        </div>
+        <div data-bind="compose: 'Portrait/_PortraitAd.html'" style="margin-bottom:20px"></div>
+    </div>
+
+    <!-- Bottom -->
+    <div data-bind="if: CurrencyPosition() == 'Bottom'">
+        <div data-bind="compose: 'Portrait/_PortraitAd.html'" style="margin-top:20px"></div>
+        <div class="col-md-12 frame" style="margin-top:30px;margin-bottom:20px;">
+
+            <div data-bind="compose: 'Portrait/_PortraitCurrency.html'"></div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div data-bind="compose: 'Portrait/_PortraitFooter.html'"></div>
+    </div>
+
+</div>
+<div data-bind="if: Template() == 'Product'">
+    <div class="row">
+        <div class="col-sm-9" style="padding-right:0px;margin-right:0px;">
+            <div data-bind="compose: 'Product/_ProductAd.html'"></div>
+        </div>
+        <div class="col-sm-3" style="padding-left:0px;margin-left:0px;background-color:#323544">
+            <div data-bind="compose: 'Product/_ProductNav.html'"></div>
+        </div>
+    </div>
+    <div>
+        <!--<div data-bind="compose: 'Product/_ProductNewsFeed.html'"></div>-->
+    </div>
+    <div>
+        <div data-bind="compose: 'Product/_ProductFooter.html'"></div>
+    </div>
+</div>
+
+<div data-bind="if: Template() == 'Template Out door'">
+    <div >
+        <div data-bind="compose: 'OutDoor/_OutDoorAd.html'"></div>
+
+    </div>
+    <div id="footer-fixed">
+        <div data-bind="compose: 'OutDoor/_OutDoorFooter.html'"></div>
+    </div>
+</div>
+
+<div data-bind="if: Template() == 'License'">
+    <center style="padding-top:500px"><h1>Activate License</h1></center>
+</div>
+
+<!-- Queue 1 -->
+<div data-bind="if: Template() == 'Template 4'">
+    <div data-bind="compose: 'Template4/_LandscapeNav.html'"></div>
+
+    <!-- Left -->
+    <div data-bind="if: CurrencyPosition() == 'Left'">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+
+                    <div class="col-md-5">
+                        <div data-bind="compose: 'Template4/_LandscapeCurrency.html'"></div>
+                    </div>
+                    <div class="col-sm-1"></div>
+
+                    <div class="col-md-5">
+                        <div data-bind="compose: 'Template4/_LandscapeCurrency.html'"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div data-bind="compose: 'Template4/_LandscapeAd.html'"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Template4/_LandscapeChangeFirst.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Template4/_LandscapeChangeSecond.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Template4/_LandscapeChangeThird.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Template4/_LandscapeChangeFourth.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Template4/_LandscapeChangeFifth.html'"></div>
+            </div>
+            <div class="col-sm-2">
+                <div data-bind="compose: 'Template4/_LandscapeChangeSix.html'"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right -->
+    <div data-bind="if: CurrencyPosition() == 'Right'">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div data-bind="compose: 'Template4/_LandscapeAd.html'"></div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+
+                        <div class="col-md-5">
+                            <div data-bind="compose: 'Template4/_LandscapeCurrency.html'"></div>
+                        </div>
+                        <div class="col-sm-1"></div>
+
+                        <div class="col-md-5">
+                            <div data-bind="compose: 'Template4/_LandscapeCurrency.html'"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Template4/_LandscapeChangeFirst.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Template4/_LandscapeChangeSecond.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Template4/_LandscapeChangeThird.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Template4/_LandscapeChangeFourth.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Template4/_LandscapeChangeFifth.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Template4/_LandscapeChangeSix.html'"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div data-bind="compose: 'Template4/_LandscapeFooter.html'"></div>
+    </div>
+</div>
+
+<!-- Queue 2 -->
+<div data-bind="if: Template() == 'Template 5'">
+    <div data-bind="compose: 'Queue/_QueueNav.html'"></div>
+
+    <!-- Left -->
+    <div data-bind="if: CurrencyPosition() == 'Left'">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div data-bind="compose: 'Queue/_QueueCurrency.html'"></div>
+                </div>
+                <div class="col-md-6">
+                    <div data-bind="compose: 'Queue/_QueueAd.html'"></div>
+                    <div data-bind="visible: ShowFeature() == 'Weather' && !HasQueue()">
+                        <div data-bind="compose: 'Queue/_QueueWeather.html'"></div>
+                    </div>
+                    <div class="row" data-bind="visible: ShowFeature() == 'Time' && !HasQueue()">
+                        <div id="countdown">
+                            <div data-bind="compose: 'Queue/_QueueTime.html'"></div>
+                        </div>
+                    </div>
+                    <div class="row" data-bind="visible: HasQueue()">
+                        <div id="countdown">
+                            <div data-bind="compose: 'Queue/_QueueDisplayFeature.html'"></div>
+                        </div>
+                    </div>
+                    <div data-bind="visible: ShowFeature() == 'News' && !HasQueue()">
+                        <div data-bind="compose: 'Queue/_QueueNewsFeed.html'"></div>
+                    </div>
+                    <div class="row" data-bind="visible: ShowFeature() == 'Change' && !HasQueue()">
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Queue/_QueueChangeFirst.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Queue/_QueueChangeSecond.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Queue/_QueueChangeThird.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Queue/_QueueChangeFourth.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Queue/_QueueChangeFifth.html'"></div>
+                        </div>
+                        <div class="col-sm-2">
+                            <div data-bind="compose: 'Queue/_QueueChangeSix.html'"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Right -->
+    <div data-bind="if: CurrencyPosition() == 'Right'">
+
+        <div class="container-fluid">
+            <div>
+                <div class="row">
+
+                    <div class="col-sm-6">
+                        <div data-bind="compose: 'Queue/_QueueAd.html'"></div>
+                        <div data-bind="visible: ShowFeature() == 'News' && !HasQueue()">
+                            <div data-bind="compose: 'Queue/_QueueNewsFeedRight.html'"></div>
+                        </div>
+
+                        <div class="row" data-bind="visible: ShowFeature() == 'Time' && !HasQueue()">
+                            <div id="countdown">
+                                <div data-bind="compose: 'Queue/_QueueTime.html'"></div>
+                            </div>
+                        </div>
+                        <div class="row" data-bind="visible: HasQueue()">
+                            <div id="countdown">
+                                <div data-bind="compose: 'Queue/_QueueDisplayFeature.html'"></div>
+                            </div>
+                        </div>
+                        <div data-bind="visible: ShowFeature() == 'Weather' && !HasQueue()">
+                            <div data-bind="compose: 'Queue/_QueueWeather.html'"></div>
+                        </div>
+
+                        <div class="row" data-bind="visible: ShowFeature() == 'Change' && !HasQueue()">
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Queue/_QueueChangeFirst.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Queue/_QueueChangeSecond.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Queue/_QueueChangeThird.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Queue/_QueueChangeFourth.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Queue/_QueueChangeFifth.html'"></div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div data-bind="compose: 'Queue/_QueueChangeSix.html'"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 frame">
+                        <div data-bind="compose: 'Queue/_QueueCurrency.html'"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--<nav class="navbar fixed-bottom fbg overlay">-->
+
+        </div>
+    </div>
+    <div class="footer">
+        <div data-bind="compose: 'Queue/_QueueFooter.html'"></div>
+    </div>
+</div>

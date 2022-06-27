@@ -1,0 +1,17 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark navigation" data-bind="style: {background: NavStyle().Background,borderColor:NavStyle().TopText} ">
+    <a class="navbar-brand" href="#" data-bind="ifnot: LogoLeft()">
+        <img data-bind="visible: LeftLogoWidth() != '0px',attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoText, },style: {width:LeftLogoWidth(),height:'100px'}">
+        <img data-bind="visible: RightLogoWidth() != '0px' && Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon},style: {width:RightLogoWidth(),height:'100px'}" class="logg">
+        <img data-bind="visible: RightLogoWidth() != '0px' && !Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon},style: {width:RightLogoWidth(),height:'100px'}" width="25%">
+    </a>
+    <a class="navbar-brand" href="#" data-bind="if: LogoLeft()">
+        <img data-bind="visible: RightLogoWidth() != '0px' && Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon},style: {width:RightLogoWidth(),height:'100px'}" class="logg">
+        <img data-bind="visible: RightLogoWidth() != '0px' && !Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon},style: {width:RightLogoWidth(),height:'100px'}" width="25%">
+        <img data-bind="visible: LeftLogoWidth() != '0px',attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoText, },style: {width:LeftLogoWidth(),height:'100px'}">
+    </a>
+    <div class="collapse navbar-collapse">
+        <span class="navbar-text text-center" data-bind="style: {paddingLeft:NavStyle().HeaderPadding}" ><h1><span class="date" data-bind="style: {color: NavStyle().TopText,fontSize: NavStyle().DateFont},text: AmharicCalendar" style="font-weight:700"></span></h1><h1><span class="date"><span style="font-weight:700" data-bind="style: {color: NavStyle().BottomText,fontSize: NavStyle().DateFont},text: Today"></span></h1></span></span></span>
+        <ul class="navbar-nav mr-auto"><li></li></ul>
+        <span class="navbar-text" id="navbarText"><h1><span data-bind="style: {color: NavStyle().TopText, fontSize: NavStyle().BranchFont}"> <span data-bind="text: BranchInAmharic"></span> <span data-bind="style: {color: NavStyle().TopText, fontSize: NavStyle().BranchFont} "> </span></span></h1><h1><span data-bind="style: {color: NavStyle().BottomText,fontSize: NavStyle().BranchFont},text: Branch"></span> </h1><span class="date"><span></span></span>
+    </div>
+</nav>

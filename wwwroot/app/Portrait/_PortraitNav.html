@@ -1,0 +1,28 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark navigation" data-bind="style: {background: NavStyle().Background,borderColor:NavStyle().TopText} ">
+    <a class="navbar-brand" href="#" data-bind="ifnot: LogoLeft()">
+        <img data-bind="visible: LeftLogoWidth() != '0px',attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoText, },style: {width:LeftLogoWidth(),height:'190px'}">
+        <img data-bind="visible: RightLogoWidth() != '0px' && Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon},style: {width:RightLogoWidth(),height:'190px'}" class="logg">
+        <img data-bind="visible: RightLogoWidth() != '0px' && !Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon},style: {width:RightLogoWidth(),height:'200px'}">
+    </a>
+    <a class="navbar-brand" href="#" data-bind="if: LogoLeft()">
+        <img data-bind="visible: RightLogoWidth() != '0px' && Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon},style: {width:RightLogoWidth(),height:'190px'}" class="logg">
+        <img data-bind="visible: RightLogoWidth() != '0px' && !Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon},style: {width:RightLogoWidth(),height:'190px'}">
+        <img data-bind="visible: LeftLogoWidth() != '0px',attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoText, },style: {width:LeftLogoWidth(),height:'190px'}">
+    </a>
+    <!--<a class="navbar-brand" href="#">
+        <img data-bind="attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoText}" style="height:200px; width:350px;">
+        <img data-bind="if: Rotate(),visible: Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon}" class="logg" width="25%" style="height:200px; width:180px;">
+        <img data-bind="if: !Rotate(),visible: !Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon}" width="25%" style="height:200px; width:180px;">
+    </a>-->
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto"><li></li></ul>
+        <span class="navbar-text" id="navbarText">
+            <h1><span class="date" data-bind="style: {color: NavStyle().TopText,fontSize: NavStyle().DateFont},text: AmharicCalendar" style="font-weight:700"></span></h1>
+            <h1><span class="date" data-bind="style: {color: NavStyle().BottomText,fontSize: NavStyle().DateFont},text: Today" style="font-weight:700"></span></h1>
+            <br></br>
+            <h1><span data-bind="style: {color: NavStyle().TopText, fontSize: NavStyle().BranchFont}"> <span data-bind="text: BranchInAmharic"></span> <span data-bind="style: {color: NavStyle().TopText, fontSize: NavStyle().BranchFont} "> </span></span></h1>
+            <h1><span data-bind="style: {color: NavStyle().BottomText,fontSize: NavStyle().BranchFont},text: Branch"></span> </h1>
+
+        </span>
+    </div>
+</nav>

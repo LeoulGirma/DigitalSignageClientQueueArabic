@@ -1,0 +1,7 @@
+﻿<div data-bind="visible: Second.Model().Difference() >= 0">
+    <div id="two" class="collection-box"><p><small><span data-bind="text: Second.Model().Abbreviation"></span></small></p><h3 class="color1"><span class="counter">+<span data-bind="text: Second.Model().Difference"></span></span> </h3><i class="lnr lnr-arrow-up"></i><p><span data-bind="text: Year"></span></p></div>
+
+</div>
+<div data-bind="visible: Second.Model().Difference() < 0">
+    <div id="two" class="collection-box"><p><small><span data-bind="text: Second.Model().Abbreviation"></span></small></p><h3 class="color2"><span class="counter"><span data-bind="text: Second.Model().Difference"></span></span> </h3><i class="lnr lnr-arrow-down"></i><p><span data-bind="text: Year"></span></p></div>
+</div>

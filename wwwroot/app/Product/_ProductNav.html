@@ -1,0 +1,73 @@
+﻿<!--<nav class="navbar navbar-expand-lg navbar-dark navigation" data-bind="style: {background: NavStyle().Background,borderColor:NavStyle().TopText} ">
+    <img data-bind="if: Rotate(),visible: Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon}" class="logg text-center" style="height:100px;width:100% ">
+    <img data-bind="if: !Rotate(),visible: !Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon}" class="text-center"  style="height:100px;max-width:100%">
+    <a class="text-center" href="#">
+
+
+    </a>
+</nav>-->
+
+<nav class="navbar navbar-expand-lg navbar-dark navigation" data-bind="style: {background: NavStyle().Background,borderColor:NavStyle().TopText} ">
+    <a class="navbar-brand" href="#">
+
+        <img data-bind="attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoText}" style="height:100px; width:250px;">
+        <img data-bind="if: Rotate(),visible: Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon}" class="logg" style="height:100px; width:80px;">
+        <img data-bind="if: !Rotate(),visible: !Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().HeaderLogoIcon}" width="25%" style="height:100px; width:80px;">
+    </a>
+
+    <div class="collapse navbar-collapse">
+        <span class="navbar-text text-center" style="padding-left:550px;"><h1><span class="date" data-bind="style: {color: NavStyle().TopText,fontSize: NavStyle().DateFont},text: AmharicCalendar" style="font-weight:700"></span></h1><h1><span class="date"><span style="font-weight:700" data-bind="style: {color: NavStyle().BottomText,fontSize: NavStyle().DateFont},text: Today"></span></h1></span></span></span>
+        <ul class="navbar-nav mr-auto"><li></li></ul>
+        <span class="navbar-text" id="navbarText"><h1><span data-bind="style: {color: NavStyle().TopText, fontSize: NavStyle().BranchFont}"> <span data-bind="text: BranchInAmharic"></span> <span data-bind="style: {color: NavStyle().TopText, fontSize: NavStyle().BranchFont} "> </span></span></h1><h1><span data-bind="style: {color: NavStyle().BottomText,fontSize: NavStyle().BranchFont},text: Branch"></span> </h1><span class="date"><span></span></span>
+    </div>
+</nav>
+
+<div class="vticker">
+    <ul>
+        <li style="margin:0px;">
+            <div class="list-group" style="margin:5px;">
+                <div class="list-group-item" style="margin-bottom:0px;padding:0px;background-color:#323544;color:black">
+                    <div class="thumbnail">
+                        <img src="../lib/Project/img/lifestyle-8.jpg" alt="..." style="height:180px;width:100%">
+
+                    </div>
+                </div>
+            </div>
+
+        </li>
+        <li style="margin:0px;">
+            <div class="list-group" style="margin:5px;">
+                <div class="list-group-item" style="margin-bottom:0px;padding:0px;background-color:#323544;color:black">
+                    <div class="thumbnail">
+                        <img src="../lib/Project/img/boleatlantic.png" alt="..." style="height:180px;width:100%">
+
+                    </div>
+                </div>
+            </div>
+
+        </li>
+        <li style="margin:0px;">
+            <div class="list-group" style="margin:5px;">
+                <div class="list-group-item" style="padding:0px;background-color:black;color:#323544">
+                    <div class="thumbnail">
+                        <img src="../lib/Project/img/cashexpress.png" alt="..." style="height:180px;width:100%">
+
+                    </div>
+                </div>
+            </div>
+
+        </li>
+        <!--<li style="padding:0px;margin:0px;">
+            <div class="list-group" style="margin:5px;">
+                <div class="list-group-item" style="padding:0px;">
+                    <div class="thumbnail">
+                        <img src="../lib/Project/img/transfast.png" alt="..." style="height:180px;width:100%">
+
+                    </div>
+                </div>
+            </div>
+
+        </li>-->
+    </ul>
+</div>
+

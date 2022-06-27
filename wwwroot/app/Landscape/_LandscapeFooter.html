@@ -1,0 +1,18 @@
+﻿
+    <div class="row" data-bind="style: {background: NavStyle().Background}">
+        <span class="date"><span></span></span>
+
+        <div data-bind="visible: Rotate(),style: {background: NavStyle().Background}" class="col-md-2 footer-title"><img class="logg" data-bind="visible: Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().FooterLogo},style: {background: NavStyle().Background, height: '50px'}" style="width:60%" width="70%"></div>
+        <div data-bind="visible: !Rotate(),style: {background: NavStyle().Background}" class="col-md-2 footer-title"><img data-bind="visible: !Rotate(), attr {src: 'lib/Project/Logo/' + NavStyle().FooterLogo},style: {background: NavStyle().Background, height: '50px'}" style="width:60%" width="70%"></div>
+        <div class="col-md-10 footer-marquee" data-bind="style: {background: BodyStyle().RSSBackground,borderColor:NavStyle().Background}">
+            <!--<div class="example1" id="LandscapeMarquee">
+                <span data-bind="style: {color: BodyStyle().RSSText,fontSize: BodyStyle().RSSFont},text: RSS"></span>
+            </div>-->
+            <marquee id="LandscapeMarquee">
+                <span data-bind="style: {color: BodyStyle().RSSText,fontSize: BodyStyle().RSSFont},text: RSS"></span>
+            </marquee>
+        </div>
+        <!-- Powered By -->
+        <!--<div data-bind="style: {background: NavStyle().Background}" class="col-md-2 footer-title"><img data-bind="attr {src: 'lib/Project/img/powered.png'},style: {background: NavStyle().Background, height: '50px'}" style="width:60%" width="70%"></div>-->
+
+    </div>

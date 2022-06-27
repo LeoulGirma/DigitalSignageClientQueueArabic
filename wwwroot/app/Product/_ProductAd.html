@@ -1,0 +1,17 @@
+﻿<!--<div class="embed-responsive embed-responsive-16by9 frame-outdoor" data-bind="if: !ChangeFullScreen(),visible: !FullScreen() && IsVideo()">
+    <video autoplay muted loop class="embed-responsive-item"><source data-bind="attr{ src: 'lib/Project/Video/' + LongVideo() }"></video>
+</div>-->
+<!--<div class="embed-responsive embed-responsive-16by9 frame" data-bind="if: ChangeFullScreen(),visible: FullScreen() && IsVideo()">
+    <video id="fullScreen" autoplay muted loop class="embed-responsive-item"><source data-bind="attr{ src: 'lib/Project/Video/' + ShortVideo() }"></video>
+</div>-->
+<!--<div data-bind="if: !ChangeFullScreen() ,visible: !FullScreen() && !IsVideo()">
+    <img data-bind="attr{ src: 'lib/Project/Video/' + LongVideo() }" width="100%" style="height:500px" class="img-thumbnail">
+</div>-->
+
+<div class="embed-responsive embed-responsive-16by9 frame" data-bind="if: !ChangeFullScreen(),visible: !FullScreen() && IsVideo()">
+    <video autoplay muted loop class="embed-responsive-item"><source data-bind="attr{ src: 'lib/Project/Video/' + LongVideo() }"></video>
+</div>
+<div class="embed-responsive embed-responsive-16by9 frame" data-bind="if: FullScreen() , visible: FullScreen() && IsVideo()">
+    <video autoplay muted loop class="embed-responsive-item"><source data-bind="attr{ src: 'lib/Project/Video/' + ShortVideo() }"></video>
+</div>
+

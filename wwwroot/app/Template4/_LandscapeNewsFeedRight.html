@@ -1,0 +1,46 @@
+﻿<div class="news-right news-div" id="element-right">
+    <table cellspacing="0" cellpadding="0" border="0" align="right" style="width: 100%;float: none; text-align: center; border-collapse: collapse;">
+        <tbody>
+            <tr>
+                <td style="padding-top: 10px;">
+                    <table cellspacing="0" cellpadding="0" border="0" align="right" data-bind="style: {borderStyle: 'solid', borderColor: RSSStyle().BackgroundColor,marginBottom: '5px', borderWidth: '1px',width: '100%', float: 'none'}">
+                        <tbody id="rss-news" style="display:block;width:100%;height:315px;overflow:auto;overflow-y:hidden;">
+                            <tr>
+                                <td bgcolor="9e0306" cellspacing="0" cellpadding="0" border="0" align="left" valign="middle" data-bind="style: {color:RSSStyle().TextColor,width: '100%',height:'60px',background: RSSStyle().BackgroundColor}">
+                                    <div class="row" style="width:100%;text-align:left;vertical-align:middle;align-items:center">
+                                        <div class="col-sm-2">
+
+                                            <img id="news-div" data-bind="attr {src: 'lib/Project/Logo/' + RSSLogo()},style: { height: '60px'}" style="width:60%" width="70%">
+
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span style="vertical-align:middle; font-size: 40px; font-weight: 100; letter-spacing: 1px; line-height: 30px; font-family: helvetica, arial, sans-serif"><span data-bind="style: {color:RSSStyle().TextColor},text: RSSStyle().Category"></span></span>
+
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr class="RSSText">
+                                <td class="text-left" style="font-family: helvetica, arial, sans-serif;font-size:28px;font-weight:bold;padding-left:20px;padding-right:20px;padding-top:5px;">
+                                    <div class="row" data-bind="style: {borderBottom: 'solid',borderWidth: '1px',borderColor:RSSStyle().BackgroundColor}">
+                                        <span data-bind="style: {color:RSSStyle().BackgroundColor},text: RSSTitle"> </span>
+                                    </div>
+                                    <div class="row" style="padding-top:2px;">
+                                        <span style="font-family: Arial;font-size:16px;font-weight:bold;"><span data-bind="style: {color:RSSStyle().BackgroundColor},text: RSSDate"></span> ‎</span>
+                                    </div>
+                                    <div class="row" style="padding-left:5px;">
+                                        <span style="font-family: Calibri;font-size:28px;font-weight:bold;padding-top:5px;" data-bind="text: RSSText"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

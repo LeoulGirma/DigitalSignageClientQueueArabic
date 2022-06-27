@@ -1,0 +1,17 @@
+﻿
+
+<!--<h2  data-bind="style: {color: BodyStyle().CurrencyHeaderText,fontSize: BodyStyle().CurrencyHeaderFont}"><span class="text-left"></span>      <span class="text-right"></span>                  </h2>-->
+
+<div class="curreny">
+
+    <table class="table" id="table-queue" data-bind="style: {background: NavStyle().Background}">
+        <tr><th class="text-center" data-bind="style: {color: NavStyle().TopText,fontSize:'60px'}">ትኬት/Ticket</th><th data-bind="style: {color: NavStyle().TopText,fontSize:'60px'}" class="text-center">መስኮት/Counter</th></tr>
+        <!--<tr data-bind="if: QueueDisplay().SeventhToken != ''" id="seventh-queue" class="first text-center"><td><span style="font-size:95px;height:80px" data-bind="text: QueueDisplay().SeventhToken">-</span><td><span style="font-size:95px" data-bind="text: QueueDisplay().SeventhCounter"></span></td></tr>-->
+        <!--<tr data-bind="if: QueueDisplay().SixthToken != ''" id="sixth-queue" class="second text-center"><td><span style="font-size:95px" data-bind="text: QueueDisplay().SixthToken"></span></td><td><span style="font-size:95px" data-bind="text: QueueDisplay().SixthCounter"></span></td></tr>-->
+        <tr data-bind="if: QueueDisplay().FifthToken != ''" id="fifth-queue" class="first text-center"><td><span style="font-size:95px" data-bind="text: QueueDisplay().FifthToken"></span><td><span style="font-size:95px" data-bind="text: QueueDisplay().FifthCounter"></span></td></tr>
+        <tr data-bind="if: QueueDisplay().FourthToken != ''" id="fourth-queue" class="second text-center"><td><span style="font-size:95px" data-bind="text: QueueDisplay().FourthToken"></span></td><td><span style="font-size:95px" data-bind="text: QueueDisplay().FourthCounter"></span></td></tr>
+        <tr data-bind="if: QueueDisplay().ThirdToken != ''" id="third-queue" class="first text-center"><td><span style="font-size:95px" data-bind="text: QueueDisplay().ThirdToken"></span><td><span style="font-size:95px" data-bind="text: QueueDisplay().ThirdCounter"></span></td></tr>
+        <tr data-bind="if: QueueDisplay().SecondToken != ''" id="second-queue" class="second text-center"><td><span style="font-size:95px" data-bind="text: QueueDisplay().SecondToken"></span><td><span style="font-size:95px" data-bind="text: QueueDisplay().SecondCounter"></span></td></tr>
+        <tr data-bind="if: QueueDisplay().FirstToken != ''" id="first-queue" class="first text-center"><td><span style="font-size:95px" data-bind="text: QueueDisplay().FirstToken"></span></td><td><span style="font-size:95px" data-bind="text: QueueDisplay().FirstCounter"></span></td></tr>
+    </table>
+</div>

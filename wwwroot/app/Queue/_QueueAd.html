@@ -1,0 +1,12 @@
+﻿<!--<div class="embed-responsive embed-responsive-16by9 frame" data-bind="if: !ChangeFullScreen(),visible: !FullScreen() && IsVideo()">
+    <video autoplay muted class="embed-responsive-item" id="smallScreen"><source data-bind="attr{ src: 'lib/Project/Video/' + LongVideo() }"></video>
+</div>-->
+<div class="embed-responsive embed-responsive-16by9 frame" data-bind="visible: IsVideo()">
+    <video autoplay muted loop class="embed-responsive-item" id="smallScreen"><source src=""></video>
+</div>
+<!--<div class="embed-responsive embed-responsive-16by9 frame" data-bind="if: FullScreen() , visible: FullScreen() && IsVideo()">
+    <video id="fullScreen" autoplay muted class="embed-responsive-item"><source data-bind="attr{ src: 'lib/Project/Video/' + ShortVideo() }"></video>
+</div>-->
+<div data-bind="visible: !IsVideo()">
+    <img data-bind="attr{ src: 'lib/Project/Video/' + ShortVideo() }" width="100%" style="height:500px" class="img-thumbnail">
+</div>
